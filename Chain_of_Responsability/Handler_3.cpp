@@ -1,11 +1,11 @@
-#ifndef HANDLER_2
-#define HANDLER_2
+#ifndef HANDLER_3
+#define HANDLER_3
 
 #include "Handler.cpp" 
 #include <iostream>
 using namespace std;
 
-class Handler_2 : public Handler
+class Handler_3 : public Handler
 {
     private:
         Handler *nextObject;
@@ -14,11 +14,11 @@ class Handler_2 : public Handler
     void setNext(Handler *obj){nextObject = obj;};
     void handlerProcessor(Amount *request)
     {
-        if(request->getAmount()<100){
-            cout<<"Handler_2   "<<request->getAmount()<<endl;
+        if(request->getAmount()>100){
+            cout<<"Handler_3"<<request->getAmount()<<endl;
         }
         else 
-        {nextObject->handlerProcessor(request);}
+        cout<<"no se pudo, que duro"<< endl;
     }
 };
 

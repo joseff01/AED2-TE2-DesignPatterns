@@ -1,3 +1,6 @@
+#ifndef AMOUNT
+#define AMOUNT
+
 class Amount
 {
     private: 
@@ -7,3 +10,5 @@ class Amount
     Amount(int amount_int){this->amount_int = amount_int;};
     int getAmount(){return amount_int;};
 };
+
+#endif
