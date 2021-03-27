@@ -14,8 +14,8 @@ class Handler_2 : public Handler
     void setNext(Handler *obj){nextObject = obj;};
     void handlerProcessor(Amount *request)
     {
-        if(request->getAmount()<100){
-            cout<<"Handler_2   "<<request->getAmount()<<endl;
+        if(request->getAmount()<2000){
+            cout<<"Handler 2 manejo el valor "<<request->getAmount()<<endl;
         }
         else 
         {nextObject->handlerProcessor(request);}

@@ -18,7 +18,11 @@ int main()
 
     Amount *amountObj = new Amount(900);
     Handler1_Obj->handlerProcessor(amountObj);
-    cout <<"Amount:  "<<amountObj->getAmount()<< endl;
+    Amount *anotherObj = new Amount(1500);
+    Handler1_Obj->handlerProcessor(anotherObj);
+    Amount *thirdObj = new Amount(3000);
+    Handler1_Obj->handlerProcessor(thirdObj);
+   // cout <<"Amount:  "<<amountObj->getAmount()<< endl;
     
     return 0;
 }

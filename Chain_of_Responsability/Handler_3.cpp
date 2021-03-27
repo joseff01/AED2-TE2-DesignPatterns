@@ -14,11 +14,11 @@ class Handler_3 : public Handler
     void setNext(Handler *obj){nextObject = obj;};
     void handlerProcessor(Amount *request)
     {
-        if(request->getAmount()>100){
-            cout<<"Handler_3"<<request->getAmount()<<endl;
+        if(request->getAmount()>2000){
+            cout<<"Handler 3 manejo el valor"<<request->getAmount()<<endl;
         }
         else 
-        cout<<"no se pudo, que duro"<< endl;
+        cout<<"Fin"<< endl;
     }
 };
 
